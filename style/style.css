@@ -1,0 +1,353 @@
+*{
+    scroll-behavior: smooth;
+}
+#demo{
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 15px 10px;
+    position: fixed;
+    z-index: 100000;
+    bottom: 15px;
+    right: 10px;
+    transition:0.4s;
+    cursor:pointer;
+    font-size: 20px;
+    display: none;
+}
+#demo:hover{
+    background-color: white;
+    color: #333;
+}
+body{
+    
+    font-family: sans-serif;
+    margin: 0;
+    padding:0;
+    height: 3000px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1 ,h2, h3, h4, h5, h6, a {
+    margin: 0px;
+    padding:0px;
+
+}
+/*header navbar and logo*/
+.header_one{
+    background-color: white;
+    display:flex;
+    justify-content:flex-start;
+    padding:19px 19px 19px 30px;
+    box-shadow: 0 1px 2px #444;
+}
+.logo{
+    flex-grow: 1;
+    
+}
+.logo a{
+    text-decoration: none;
+    color:#333;
+
+}
+.logo h1{
+    letter-spacing: 4.5px;
+    font-size: 15px;
+    flex-grow: 1;
+    font-weight: bold;
+    margin-right: 6px;
+    display: inline;
+
+
+}
+.logo h3{
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    display:inline;
+    
+    
+    
+
+}
+
+
+.navbar a{
+    color:#222;
+    text-decoration: none;
+    padding:13.5px;
+    font-size: 15px;
+    letter-spacing: 4.85px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+
+    
+    
+}
+.navbar a:hover{
+    background-color: rgba(0, 0, 0,0.5);
+    color:white;
+}
+
+/*header_two part image */
+.img_header_two{
+    position:relative;
+}
+.img_header_two img{
+width: 100%;
+height: 100%;
+}
+.text_img{
+position:absolute;
+left:50%;
+top:54.5%;
+transform: translate(-50%,-50%);  
+}
+.text_img h1, .text_img h3{
+    display: inline;  
+    color:white;
+}
+.text_img h1{
+    background-color:rgba(0, 0, 0,0.7);
+    padding:15px 18px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+.text_img h3{
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding:15px 5px;
+    font-weight: 100;
+
+}
+/*content*/
+/*part one projects*/
+.content{
+    background-color: white;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.text_content_first{
+    width:95%;
+    margin:auto;
+    padding:60px 0 40px 0;
+}
+.text_content_first h2{
+    font-weight: 200;
+}
+
+.hr{
+    border:0.01px solid #999;
+    margin-top:20px;
+
+ 
+}
+
+.house_projects{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px 10px;
+    width:95%;
+    margin:auto;
+     
+}
+.house_projects .wow{position:relative; }
+.house_projects img{
+    width:100%;
+    height: auto;
+    
+   
+}
+
+.wow h5{
+    background-color:black;
+    color:white;
+    padding:10px 15px;
+    position:absolute;
+    z-index: 100;
+    left:0px;
+    display: inline;
+    
+}
+.wow:nth-of-type(5){grid-area:2/2/3/3;}
+.wow:nth-of-type(6){grid-area:2/1/2/2}
+.wow:nth-of-type(7){grid-area:2/4/3/5;}
+.wow:nth-of-type(8){grid-area:2/3/3/4;}
+
+/* part About */
+
+.about{
+    max-width:95%;
+    margin: 60px auto 40px auto;
+    
+}
+.about h2{font-weight: 200;}
+
+
+.about p{
+    color:#333;
+    padding-right:35px;
+    margin:30px 0  0 0;
+    line-height: 25px;
+
+}
+.person{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    grid-column-gap: 17px;
+    max-width: 100%;
+    margin:40px auto 0 auto;
+}
+.person img{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(80%);
+}
+.person h2{
+    font-weight: normal;
+    color: #333;
+    font-size: 21px;
+    margin-top: 10px;
+}
+.person h3{
+    color:#666;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 25px 0 15px 0;
+}
+.person p{
+    color:#333;
+    font-size: 15px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.person input{
+    border:none;
+    width: 100%;
+    padding:12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+    transition:0.5s ease;
+    border-radius: 10px;
+
+}
+.person input:hover{
+    color:white;
+    background-color: #333;
+
+    
+}
+.contact{
+    max-width: 95%;
+    margin: 60px auto 0 auto;
+}
+.contact h2{font-weight: 200;}
+.contact h3{
+    font-weight:600;
+    color: #555;
+    font-size: 18px;
+    margin-top: 25px;
+
+}
+.contact form{margin-top: 25px;}
+.contact  input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 14px 0 14px 0;
+    font-size: 19px;
+    border: none;
+    color:black;
+    background-color: rgb(228, 226, 226);
+}
+.contact input[type="text"]:focus{
+    background-color:#333;
+    color:white;
+}
+.contact input[type="submit"]{
+    padding:14px 30px;
+    border:none;
+    background-color: #333;
+    color:white;
+    font-weight: 700;
+    font-size: 15px;
+    margin:20px 0 10px 0;
+    cursor: pointer;
+    transition:0.4s ease;
+    border-radius: 10px;
+    
+}
+.contact input[type="submit"]:hover{
+    background-color:rgb(228, 226, 226);
+    color:#333;
+}
+.contact img{
+    max-width: 100%;
+    margin-top: 30px;
+}
+.footer{
+    max-width:100%;
+    padding:40px;
+    background-color:black;
+    color:white;
+    text-align: center;
+   
+
+
+}
+.footer h3{
+    font-size: 16px;
+    font-weight: 100;
+}
+.footer a{
+    color:white;
+}
+.footer a:hover{
+    color:rgb(59, 59, 202);
+}
+
+
+
+/*design for phone*/
+/*media quierey*/
+@media  screen and (max-width:1000px) {
+    .house_projects{grid-template-columns: repeat(2,auto);}
+    .wow:nth-of-type(5){grid-area:3/1/4/2;}
+    .wow:nth-of-type(6){grid-area:3/2/4/3}
+    .wow:nth-of-type(7){grid-area:4/1/5/2;}
+    .wow:nth-of-type(8){grid-area:4/2/5/3;}
+    .person{  
+    grid-template-columns: repeat(2,auto);
+    row-gap: 10px;
+}
+    
+}
+@media  screen and (max-width:600px) {
+
+.navbar{display: none;}
+.text_img h3{display:none;}
+.house_projects{grid-template-columns: repeat(1,auto);}
+.wow:nth-of-type(5){grid-area:5/1/6/2;}
+.wow:nth-of-type(6){grid-area:6/1/7/2}
+.wow:nth-of-type(7){grid-area:7/1/8/2;}
+.wow:nth-of-type(8){grid-area:8/1/9/2;}
+.person{  grid-template-columns: repeat(1,auto);}
+
+
+    
+}
+
+
+
+
+

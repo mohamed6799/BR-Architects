@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture</title>
+  </head>
+  <body>
+    <button id="demo">Top</button>
+    <div class="header_one">
+        <div class="logo">
+            <a  href="" class="active">
+                <h1>BR</h1>
+                 <h3> Architects</h3>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="#content">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    
+    <div class="img_header_two">
+    <img src="images/header-img.jpg" alt="@" width="1500px" height="800" >
+    <div class="text_img">
+        <h1>BR</h1>
+        <h3>Architects</h3>
+    </div>
+    </div>
+    <div class="content" >
+        <div class="text_content_first" id="content">
+            <h2>Projects</h2>
+            <div class="hr"></div>
+        </div>
+        <div class="house_projects">
+            <div class="wow">
+                <img src="images/house5.jpg" alt="#" class="item1">
+                <h5>Summer House</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house2.jpg" alt="#" class="item2">
+                <h5>Brick House</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house3.jpg" alt="#" class="item3">
+                <h5>Renovated</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house4.jpg" alt="#" class="item4">
+            <h5>Barn House</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house5.jpg" alt="#" class="item5">
+                <h5>Summer House</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house2.jpg" alt="#" class="item6">
+                <h5>Brick House</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house3.jpg" alt="#" class="item7">
+                <h5>Renovated</h5>
+            </div>
+            <div class="wow">
+                <img src="images/house4.jpg" alt="#" class="item8">
+            <h5>Barn House</h5>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h2>About</h2>
+            <div class="hr"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam,quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex e commodo consequat. 
+                Excepteur sint occaecat cupidatet non proident,
+                sunt in culpa qui officia deserunt mollit anim id est
+                laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam,quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea connodo consequat.
+            
+            </p>
+            <div class="person">
+                <div class="John_Doe">
+                    <img src="images/team2.jpg" alt="#"/>
+                    <h2>John Doe</h2>
+                    <h3>CEO & Founder</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vesibulum.
+                        Suspendisse sodalese pellentesque elementum.
+                    </p>
+                    <input type="button" value="Contact"/>
+                </div>
+                <div class="Jana_Doe">
+                    <img src="images/team1.jpg" alt="#"/>
+                    <h2>Jana Doe</h2>
+                    <h3>Architect</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vesibulum.
+                        Suspendisse sodalese pellentesque elementum.
+                    </p>
+                    <input type="button" value="Contact"/>
+                </div>
+                <div class="Mike_Ross">
+                    <img src="images/team3.jpg" alt="#"/>
+                    <h2>Mike Ross</h2>
+                    <h3>Architect</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vesibulum.
+                        Suspendisse sodalese pellentesque elementum.
+                    </p>
+                    <input type="button" value="Contact"/>
+                </div>
+                <div class="Dan_Star">
+                    <img src="images/team4.jpg" alt="#"/>
+                    <h2>Dan Star</h2>
+                    <h3>Architect</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vesibulum.
+                        Suspendisse sodalese pellentesque elementum.
+                    </p>
+                    <input type="button" value="Contact"/>
+                </div>
+            </div>
+                </div>
+                
+                <div class="contact" id="contact">
+                    <h2>Contact</h2>
+                    <div class="hr"></div>
+                    <h3>lets get in touch and talk about your next project.</h3>
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Comment">
+                        <input type="submit" value="SEND MESSAGE">
+                    </form>
+                    <img src="images/map.jpg" alt="#"/>
+                </div>
+            </div>
+            <div class="footer">
+                <h3>Powered by <a href="">w3.css</a></h3>
+            </div>
+            <script>
+
+                let x  = document.getElementById("demo");
+                window.onscroll = function(){
+                    if(window.scrollY >= 150){
+                        x.style.display = "block"
+                    }else{
+                        x.style.display = "none"
+                    }
+                    x.onclick = function(){
+                            window.scrollTo({
+                                left : 0 , 
+                                top : 0,
+                                behavior : "smooth"
+                            })
+                        }
+                    }
+            </script>
+       
+    
+    </body>
+</html>
